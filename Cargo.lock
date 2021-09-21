@@ -180,20 +180,22 @@ dependencies = [
 
 [[package]]
 name = "cmd_lib"
-version = "1.0.4"
+version = "1.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1bbea13d4ed241b7f47c8cec8464ed2500861620dc41140ffd92e30700a77440"
+checksum = "125451113805b40f0d738b34bbb84fb4fa1815b13522baaff0bddbb1498f73b8"
 dependencies = [
  "cmd_lib_macros",
+ "faccess",
  "lazy_static",
  "log",
+ "os_pipe",
 ]
 
 [[package]]
 name = "cmd_lib_macros"
-version = "1.0.4"
+version = "1.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f027e067c7439454444d7479c3587b82adb030f5c79ea3996c6540d96077ef1"
+checksum = "3469d4e1ef9969e62adde6953b40c34c7dfbde42d750601f4e56c1d87b9e975a"
 dependencies = [
  "proc-macro-error",
  "proc-macro2",
@@ -355,6 +357,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2fa20922281f9ee5ffcda45e80d56085829279f1270f79fbabc39809a4354807"
 dependencies = [
  "byteorder",
+]
+
+[[package]]
+name = "faccess"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e039175679baf763ddddf4f76900b92d4dae9411ee88cf42d2f11b976b09e07c"
+dependencies = [
+ "bitflags",
+ "libc",
+ "winapi",
 ]
 
 [[package]]
@@ -761,6 +774,16 @@ name = "opaque-debug"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
+
+[[package]]
+name = "os_pipe"
+version = "0.9.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fb233f06c2307e1f5ce2ecad9f8121cffbbee2c95428f44ea85222e460d0d213"
+dependencies = [
+ "libc",
+ "winapi",
+]
 
 [[package]]
 name = "os_str_bytes"
